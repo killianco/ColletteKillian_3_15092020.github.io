@@ -1,0 +1,205 @@
+$main-width: 350px;
+
+
+
+body{
+	font-family: verdana;
+	text-align: center;
+	background-color: yellowgreen;
+}
+
+
+#img-food{
+	display: flex;
+	margin:auto;
+	height: 40px;
+	background-color: white;
+	
+	
+
+}
+
+header{
+	display: flex;
+	margin: auto;
+    background-color: white;
+	height: 80px;
+	width:$main-width;
+}
+
+section{
+	display: flex;
+	flex-direction: column;
+	margin: auto;
+	background-color: rgb(246,246,246);
+	width: $main-width;
+	height: 320px;
+	text-align: center;
+	
+}
+
+h1{
+	display: flex;
+	flex-direction: column;
+	margin-top: 0px;
+	background-color: rgb(234,234,234 );
+	width: $main-width;
+	height: 50px;
+	line-height: 50px;
+	
+	
+}
+ h2{
+	 font-size: 1.4em;
+ }
+
+ p{
+	 font-size: 1.0em;
+ }
+
+ h3{
+	
+	background-color: rgb(187,99,219);
+	border-radius: 50px;
+	color: white;
+	font-size: 0.9em;
+	text-align: center;
+	padding: 10px 9px 10px 9px;
+    margin: auto;
+	font-weight: bold;
+	display: block;
+    width: 250px;
+    height: 40px;
+    line-height: 40px;
+}
+
+nav{
+	background-color: white;
+	width: $main-width;
+	display: flex;
+	flex-direction: column;
+	margin: auto;
+	
+}
+
+
+
+ul{
+	list-style: none;
+	padding: 20px 10px 20px 10px;
+	
+
+	
+}
+
+a{
+	display: flex;
+	background-color: rgb(246,246,246);
+	border-radius: 25px;
+	
+	padding: 10px 10px 10px 10px ;
+	margin-top: 10px;
+	
+	
+	height: 50px;
+	width: 300px;
+	
+	
+}
+
+i{
+
+	
+	
+	
+	width: 30px;
+	padding: 10px 30px 10px 20px;
+}
+
+span{
+	
+	text-align: left;
+	padding: 15px 0px 20px 0px;
+	font-size: 0.8em;
+}
+
+
+
+
+
+	
+li{
+	display: flex;
+	
+	justify-content: center;
+	text-align: center;
+	
+
+	
+	
+
+	
+}
+
+#content-restaurant{
+	display: flex;
+	flex-direction: column;
+	width: $main-width;
+	margin: auto;
+	background-color: rgb(246,246,246);
+}
+
+.the-full-palette{
+	border-radius: 20px ;
+	background-color: rgb(255, 255, 255);
+	width: 300px;
+	height: 260px;
+	margin: auto;
+	margin-bottom: 40px;
+}
+
+img{
+	border-radius: 20px 20px 0px 0px;
+	width: 300px;
+}
+
+h5{
+	
+	width: 200px;
+	margin-top: 10px;
+	
+	text-align: left;
+	margin-left: 5px;
+}
+
+h5+ p{
+	
+	text-align: left;
+	font-size: 0.9em;
+	
+	width: 180px;
+	margin-top: -20px;
+	margin-left: 5px;
+}
+
+footer{
+	background-color: rgb(53, 53, 53);
+	display: flex;
+	flex-direction: column;
+	width: $main-width;
+	margin: auto;
+	color: rgb(246,246,246);
+}
+
+#img-food-footer{
+	
+	width: 110px;
+	margin-left: 50px;
+	filter: invert(100%);
+	border-radius: 0px;
+}
+
+	
+
+
+
