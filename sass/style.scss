@@ -44,6 +44,7 @@ section{
 h1{
 	display: flex;
 	flex-direction: column;
+	font-size: 1.1em;
 	
 	margin-top: 0px;
 	
@@ -54,19 +55,23 @@ h1{
 	
 	
 }
+#map-marker{
+	margin-top: -58px;
+	margin-left: -170px;
+}
 
 
  h2{
 	 font-size: 1.4em;
  }
 
- p{
+ h5+p{
 	 font-size: 1.0em;
  }
 
  h3{
 	
-	background-color: rgb(187,99,219);
+	background-image: linear-gradient( #FF79DA, #9356DC, ) ;
 	border-radius: 50px;
 	color: white;
 	font-size: 0.9em;
@@ -99,6 +104,8 @@ ul{
 	
 }
 
+
+
 a{
 	display: flex;
 	background-color: rgb(246,246,246);
@@ -110,8 +117,19 @@ a{
 	
 	height: 50px;
 	width: 300px;
+	outline: none;
+	text-decoration: none;
 	
 	
+	
+	
+}
+a:link{
+	color: black;
+}
+
+a:visited{
+	color: black;
 }
 
 i{
@@ -130,14 +148,22 @@ span{
 	text-align: left;
 	padding: 15px 0px 20px 0px;
 	font-size: 0.8em;
+	font-weight: bold;
 }
 
 li {
 	display: flex;
-	justify-content: center;
-	text-align: center;
-  }
 	
+	
+	
+  }
+
+  .rond{
+	  width: 40px;
+	  height: 40px;
+	  border-radius: 50%;
+	  background-color: violet;
+  }
 
 
 #content-restaurant{
@@ -182,6 +208,25 @@ h5+ p{
 	margin-left: 5px;
 }
 
+.heart{
+	margin-top: -50px;
+	margin-left: 230px;
+	position: relative;
+	
+}
+
+.fas.fa-heart{
+	position: absolute;
+	display: none;
+	
+	
+}
+
+.far:hover .fas.fa-heart{
+	color: limegreen;
+	
+}
+
 footer{
 	background-color: rgb(53, 53, 53);
 	display: flex;
@@ -191,25 +236,88 @@ footer{
 	color: rgb(246,246,246); 
 	
 	
+	
 }
 
 #img-food-footer{
 	
+	
 	width: 110px;
-	margin-left: 22px;
-	margin-top: 10px;
+	margin-left: 30px;
+	margin-top: 30px;
 	filter: invert(100%);
 	border-radius: 0px;
 
 }
 
-img+p{
-	
-	text-align: left; 
-	margin-left: 22px;
-	padding-bottom: 10px;
+
+
+
+#logo-ustensils{
+	display: flex;
+	margin-left: -20px;
+	padding-left: 0px;
+	height: 30px;
+	width: 50px;
+
 }
 
+#hands-helping{
+	margin-left: -20px;
+	display: flex;
+	padding-left: 0px;
+	height: 30px;
+	width: 50px;
+
+}
+em{
+	
+	margin-top: 7px;
+	
+}
+
+@media screen and (min-width: 1480px){
+
+	body{
+		display: flex;
+		flex-direction: column;
+		background-color: blue;
+		
+	}
+
+	#img-food{
+		background-color: white;
+		text-align: center;
+		
+	}
+
+	nav{
+		width: 800px;
+		display: block;
+		
+	}
+	 
+
+	section{
+		display: flex;
+		width: 1000px;
+	}
+
+	#content-restaurant{
+		background-color: chartreuse;
+		width: 900px;
+	}
+		
+	
+	
+	
+
+
+}
+
+
+	
+	
 	
 
 
