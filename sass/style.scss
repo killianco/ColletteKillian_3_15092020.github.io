@@ -116,7 +116,7 @@ a{
 	
 	
 	height: 50px;
-	width: 300px;
+	width: 310px;
 	outline: none;
 	text-decoration: none;
 	
@@ -159,10 +159,14 @@ li {
   }
 
   .rond{
-	  width: 40px;
-	  height: 40px;
+	  width: 20px;
+	  height: 20px;
 	  border-radius: 50%;
 	  background-color: violet;
+	  font-size: 0.9em;
+	  color: grey;
+	  margin-top: 15px;
+	  margin-left: -15px;
   }
 
 
