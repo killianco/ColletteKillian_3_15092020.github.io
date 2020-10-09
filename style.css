@@ -88,7 +88,7 @@ ul {
   padding: 20px 10px 20px 10px;
 }
 
-a {
+.oval {
   display: flex;
   background-color: #f6f6f6;
   border-radius: 25px;
@@ -99,13 +99,6 @@ a {
   width: 310px;
   outline: none;
   text-decoration: none;
-}
-
-a:link {
-  color: black;
-}
-
-a:visited {
   color: black;
 }
 
