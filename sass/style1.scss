@@ -1,6 +1,8 @@
 body{
     background-color: lawngreen;
     
+   
+    
 }
 
 #main-content{ 
@@ -8,6 +10,7 @@ body{
     width: 400px;
     margin: auto;
     text-align: left; 
+    
 }
     
         #img-food{
@@ -16,9 +19,11 @@ body{
         height: 40px;
         background-color: white;
         
+        
     }
     img{
         width: 400px;
+        
     }
     
     
@@ -32,7 +37,7 @@ body{
 
 #second-main{
     width: 400px;
-    background-color: brown;
+    background-color: rgb(246,246,246);
     position: absolute;
     margin-top: -50px;
     border-radius: 35px 35px 0px 0px;
@@ -50,6 +55,7 @@ h1{
 
 h2{
     margin-left: 20px;
+    
 }
 
 h3{
@@ -58,8 +64,8 @@ h3{
 }
  p{
      margin-left: 10px;
+     
  }
-
 
 
 
@@ -68,16 +74,82 @@ h3{
     
     margin: auto;
     margin-top: 10px;
-    background-color: lemonchiffon;
+    background-color: white;
 	
-	margin-top: 10px;
+    margin-top: 10px;
+    
 	
-	
+	cursor: pointer;
 	height: 70px;
 	width: 380px;
 	outline: none;
-	text-decoration: none;
+    text-decoration: none;
+    animation: effect 5s;
+    
+    
+    
 }
+
+
+.btn{
+    width: 80px;
+    height: 70px;
+    margin-left: 350px;
+    position: absolute;
+    background-color: aquamarine;
+    overflow: hidden;
+    color: white;
+    border-radius: 0px 20px 20px 0px;
+    opacity: 1;
+    
+}
+
+.btn:hover{
+    color: blue;
+    animation: btn 2s ;
+
+}
+
+@keyframes btn {
+    0%{
+        margin-right: 0px;
+        
+    }
+    50%{
+        margin-right: -100px;
+        
+    }
+    100%{
+        margin-right: -3300px;
+    }
+}
+.fas.fa-check-circle{
+    margin-left: 20px;
+    margin-top: 20px;
+    
+    transform: rotate(-360deg);
+    transition: transform 500ms ease-in-out;
+    
+    
+}
+
+@keyframes effect{ 
+    0%{
+       opacity: 0;
+       margin-top: 30px;
+    }
+
+    50%{
+        opacity: 0,5;
+        margin-top: 15px;
+    }
+    100%{
+        opacity: 1;
+        margin-top: 0px;
+       
+    }
+}
+
 ol{
     display: flex;
     flex-direction: column;
@@ -137,5 +209,4 @@ em{
 	
     margin-top: 0px;
     margin-left: -20px;
-	
 }

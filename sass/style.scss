@@ -6,7 +6,12 @@ $ombre-box: 2px 2px 5px     rgb(227,227,227);
 body{
 	font-family: verdana;
 	text-align: center;
-	background-color: yellowgreen;
+	
+}
+#main{
+	border: solid black;
+	width: $main-width;
+	margin: auto;
 }
 
 
@@ -61,8 +66,10 @@ h1{
 }
 
 
- h2{
+ h4{
 	 font-size: 1.4em;
+	 text-align: left;
+	 margin-left: 25px;
  }
 
  h5+p{
@@ -162,9 +169,9 @@ li {
 	  width: 20px;
 	  height: 20px;
 	  border-radius: 50%;
-	  background-color: violet;
+	  background-color: #9356DC;
 	  font-size: 0.9em;
-	  color: grey;
+	  color:white;
 	  margin-top: 15px;
 	  margin-left: -15px;
   }
@@ -219,17 +226,23 @@ h5+ p{
 	
 }
 
+.heart:hover .fas.fa-heart{
+	visibility: visible;
+
+}
+
+
+
 .fas.fa-heart{
 	position: absolute;
-	display: none;
+	visibility: hidden;
+	color:  #FF79DA;
+	
 	
 	
 }
 
-.far:hover .fas.fa-heart{
-	color: limegreen;
-	
-}
+
 
 footer{
 	background-color: rgb(53, 53, 53);
@@ -274,6 +287,7 @@ footer{
 	width: 50px;
 
 }
+
 em{
 	
 	margin-top: 7px;
@@ -285,8 +299,12 @@ em{
 	body{
 		display: flex;
 		flex-direction: column;
-		background-color: blue;
+		background-color: white;
 		
+	}
+	#main{
+		border: none;
+		width: 100%;
 	}
 
 	#img-food{
@@ -295,23 +313,73 @@ em{
 		
 	}
 
+	h1{
+		margin-left: 769px;
+	}
+
 	nav{
-		width: 800px;
-		display: block;
+		width: 100%;
+		display: flex;
+		flex-direction: row;
 		
+		
+		
+	}
+	li{
+		margin-left: 200px;
+		display: flex;
+		
+	}
+
+	h4{
+		position: absolute;
+		font-size: 1.8em;
+		
+		margin-left: 89px;
+		margin-top: 0px;
+		height: 30px;
+	}
+	#content-restaurant  h4{
+		
+		margin-top: -50px;
+		margin-left: 89px;
+	}
+	ul{
+		
+		display: flex;
+		flex-direction: row;
+		margin-left: 50px;
 	}
 	 
 
 	section{
 		display: flex;
-		width: 1000px;
+		width: 100%;
 	}
 
 	#content-restaurant{
-		background-color: chartreuse;
-		width: 900px;
-	}
+		display: flex;
+		flex-direction: row;
 		
+		width: 100%;
+		padding-top: 50px;
+	}
+
+	
+	footer{
+		display: flex;
+		flex-direction: row;
+		width: 100%;
+	}
+
+	ol{
+		display: flex;
+		flex-direction: row;
+	}
+	#img-food-footer{
+		margin-top: 0px;
+		width: 200px;
+	}
 	
 	
 	

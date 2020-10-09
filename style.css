@@ -1,7 +1,12 @@
 body {
   font-family: verdana;
   text-align: center;
-  background-color: yellowgreen;
+}
+
+#main {
+  border: solid black;
+  width: 350px;
+  margin: auto;
 }
 
 #img-food {
@@ -45,8 +50,10 @@ h1 {
   margin-left: -170px;
 }
 
-h2 {
+h4 {
   font-size: 1.4em;
+  text-align: left;
+  margin-left: 25px;
 }
 
 h5 + p {
@@ -122,9 +129,9 @@ li {
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  background-color: violet;
+  background-color: #9356DC;
   font-size: 0.9em;
-  color: grey;
+  color: white;
   margin-top: 15px;
   margin-left: -15px;
 }
@@ -173,13 +180,14 @@ h5 + p {
   position: relative;
 }
 
-.fas.fa-heart {
-  position: absolute;
-  display: none;
+.heart:hover .fas.fa-heart {
+  visibility: visible;
 }
 
-.far:hover .fas.fa-heart {
-  color: limegreen;
+.fas.fa-heart {
+  position: absolute;
+  visibility: hidden;
+  color: #FF79DA;
 }
 
 footer {
@@ -223,7 +231,12 @@ em {
   body {
     display: flex;
     flex-direction: column;
-    background-color: blue;
+    background-color: white;
+  }
+
+  #main {
+    border: none;
+    width: 100%;
   }
 
   #img-food {
@@ -231,19 +244,66 @@ em {
     text-align: center;
   }
 
+  h1 {
+    margin-left: 769px;
+  }
+
   nav {
-    width: 800px;
-    display: block;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+
+  li {
+    margin-left: 200px;
+    display: flex;
+  }
+
+  h4 {
+    position: absolute;
+    font-size: 1.8em;
+    margin-left: 89px;
+    margin-top: 0px;
+    height: 30px;
+  }
+
+  #content-restaurant h4 {
+    margin-top: -50px;
+    margin-left: 89px;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: row;
+    margin-left: 50px;
   }
 
   section {
     display: flex;
-    width: 1000px;
+    width: 100%;
   }
 
   #content-restaurant {
-    background-color: chartreuse;
-    width: 900px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding-top: 50px;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+
+  ol {
+    display: flex;
+    flex-direction: row;
+  }
+
+  #img-food-footer {
+    margin-top: 0px;
+    width: 200px;
   }
 }
 
