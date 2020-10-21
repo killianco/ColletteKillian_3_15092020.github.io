@@ -16,6 +16,7 @@ body{
 	    display: flex;
 	    margin:auto;
         height: 40px;
+        width: 400px;
         background-color: white;
         
         
@@ -23,10 +24,9 @@ body{
    
     img{
         width: $main-width;
-        
         display: flex;
-       flex-direction: column;
-       margin: auto;
+        flex-direction: column;
+        margin: auto;
         
     }
     
@@ -42,15 +42,10 @@ body{
 #second-main{
     width: $main-width;
     background-color: rgb(246,246,246);
-    
-   
     position: relative;
     margin: auto;
-    
-    
     margin-top: -60px;
     border-radius: 35px 35px 0px 0px;
-   
     padding-bottom: 20px;
 }
 
@@ -102,7 +97,6 @@ h3{
     width: 80px;
     height: 70px;
     margin-left: 380px;
-    
     background-color: aquamarine;
     color: white;
     border-radius: 0px 20px 20px 0px;
@@ -225,11 +219,17 @@ em{
         
 
         
+    } 
+
+    .far.fa-heart{
+        display: none;
     }
+    
     img{
         margin: center;
         width: 100%;
-        height: 350px;
+        height: 400px;
+        
     }
     header{
         margin: center;
@@ -257,7 +257,7 @@ em{
         width: 100%;
         display: flex;
         flex-direction: column;
-        
+       
        
     }
     #content-section{
@@ -268,6 +268,7 @@ em{
         display: flex;
         flex-direction: column;
         
+        
        
         margin: auto;
         
@@ -276,6 +277,7 @@ em{
         padding-right: 80px;
     }
     footer{
+        
 		display: flex;
 		flex-direction: row;
         width: 100%;
