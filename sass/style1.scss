@@ -1,17 +1,11 @@
 body{
-    background-color: lawngreen;
+    
     
    
     
 }
 
-#main-content{ 
-    border: 3px solid;
-    width: 400px;
-    margin: auto;
-    text-align: left; 
-    
-}
+
     
         #img-food{
 	    display: flex;
@@ -21,8 +15,13 @@ body{
         
         
     }
+   
     img{
         width: 400px;
+        
+        display: flex;
+       flex-direction: column;
+       margin: auto;
         
     }
     
@@ -38,8 +37,13 @@ body{
 #second-main{
     width: 400px;
     background-color: rgb(246,246,246);
-    position: absolute;
-    margin-top: -50px;
+    
+   
+    position: relative;
+    margin: auto;
+    
+    
+    margin-top: -60px;
     border-radius: 35px 35px 0px 0px;
    
     padding-bottom: 20px;
@@ -60,10 +64,11 @@ h2{
 
 h3{
     font-size: 1.1em;
-    margin-left: 10px;
+    margin-left: 20px;
+    margin-top: -65px;
 }
  p{
-     margin-left: 10px;
+     margin-left: 20px;
      
  }
 
@@ -71,81 +76,77 @@ h3{
 
 .menu{
     border-radius: 20px;
-    
     margin: auto;
     margin-top: 10px;
     background-color: white;
-	
-    margin-top: 10px;
-    
-	
-	cursor: pointer;
+	margin-top: 10px;
+    cursor: pointer;
 	height: 70px;
 	width: 380px;
 	outline: none;
     text-decoration: none;
+    overflow: hidden;
     animation: effect 5s;
-    
     
     
 }
 
+    
 
-.btn{
+.btn  {
     width: 80px;
     height: 70px;
-    margin-left: 350px;
-    position: absolute;
+    margin-left: 380px;
+    
     background-color: aquamarine;
-    overflow: hidden;
     color: white;
     border-radius: 0px 20px 20px 0px;
     opacity: 1;
     
 }
 
-.btn:hover{
-    color: blue;
-    animation: btn 2s ;
 
-}
 
-@keyframes btn {
-    0%{
-        margin-right: 0px;
-        
-    }
-    50%{
-        margin-right: -100px;
-        
-    }
-    100%{
-        margin-right: -3300px;
-    }
-}
+
+
+.menu:hover .btn{
+   
+    margin-left: 300px;
+    transition-duration: 2s;
+
+   
+   
+
+
+} 
+
 .fas.fa-check-circle{
     margin-left: 20px;
     margin-top: 20px;
     
-    transform: rotate(-360deg);
-    transition: transform 500ms ease-in-out;
+   
     
     
 }
+.menu:hover .fas.fa-check-circle{
+transform: rotate(-360deg);
+transition: transform 1000ms ease-in-out;
+}
+
 
 @keyframes effect{ 
     0%{
        opacity: 0;
-       margin-top: 30px;
+       margin-top: 20px;
     }
 
     50%{
         opacity: 0,5;
-        margin-top: 15px;
+        
     }
     100%{
         opacity: 1;
-        margin-top: 0px;
+        margin-top: 10px;
        
     }
 }
@@ -163,7 +164,7 @@ footer{
 	width: 400px;
 	margin: auto;
     color: rgb(246,246,246); 
-    margin-top: 950px;
+   
 	
 	
 	
@@ -210,3 +211,96 @@ em{
     margin-top: 0px;
     margin-left: -20px;
 }
+
+@media screen and (min-width: 1400px){
+    body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+
+        
+    }
+    img{
+        margin: center;
+        width: 100%;
+        height: 350px;
+    }
+    header{
+        margin: center;
+        width:900px;
+    }
+    h1{
+        display: flex;
+        flex-direction: column;
+        margin-left: 0px;
+        text-align: center;
+        
+        
+        height: 60px;
+        
+        margin-left:center;
+    }
+    h2{
+        margin-left: 0px;
+    }
+    #main-content{
+        display: flex;
+        flex-direction: column;
+    }
+    #second-main{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        
+       
+    }
+    #content-section{
+        display: flex;
+    }
+    
+    section{
+        display: flex;
+        flex-direction: column;
+        
+       
+        margin: auto;
+        
+        
+        
+        padding-right: 80px;
+    }
+    footer{
+		display: flex;
+		flex-direction: row;
+        width: 100%;
+        height: 100px;
+        text-align: center;
+        margin: auto;
+    }
+    #logo-ustensils{
+       
+    }
+
+	ol{
+		display: flex;
+        flex-direction: row;
+        margin-right: 500px;
+        margin-top: auto;
+    }
+    li , li{
+        margin-left: 10px;
+        
+    }
+	#img-food-footer{
+        margin-top: 50px;
+        margin: auto;
+        width: 200px;
+        height: 50px;
+        
+    }
+    
+    
+    
+}
+   
