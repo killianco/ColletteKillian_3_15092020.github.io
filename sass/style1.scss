@@ -1,6 +1,11 @@
+$main-width: 400px;
+
+
+
 body{
     
-    
+    font-family: verdana;
+    font-size: 0.9em; 
    
     
 }
@@ -17,7 +22,7 @@ body{
     }
    
     img{
-        width: 400px;
+        width: $main-width;
         
         display: flex;
        flex-direction: column;
@@ -31,11 +36,11 @@ body{
         margin: auto;
         background-color: white;
         height: 80px;
-        width:400px;
+        width:$main-width;
     }
 
 #second-main{
-    width: 400px;
+    width: $main-width;
     background-color: rgb(246,246,246);
     
    
@@ -86,7 +91,7 @@ h3{
 	outline: none;
     text-decoration: none;
     overflow: hidden;
-    animation: effect 5s;
+    animation: effect 2s;
     
     
 }
@@ -161,7 +166,7 @@ footer{
 	background-color: rgb(53, 53, 53);
 	display: flex;
 	flex-direction: column;
-	width: 400px;
+	width: $main-width;
 	margin: auto;
     color: rgb(246,246,246); 
    
